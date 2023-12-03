@@ -191,7 +191,8 @@ FROM
     dept_manager m ON d.dept_no = m.dept_no
         JOIN
     salaries s ON m.emp_no = s.emp_no
-GROUP BY d.dept_name;
+GROUP BY d.dept_name
+ORDER BY d.dept_no;
 
 
 
