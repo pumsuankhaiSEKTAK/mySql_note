@@ -79,13 +79,25 @@ s.salary > 145000
 --connects all the values, not just those that match
 --the cartesian product of the value of two or more sets
 --particularly useful when the tables in a database are not well connected
-
+--e.g., 
 SELECT 
     dm.*, d.*
 FROM
     dept_manager dm
         CROSS JOIN
     departments d
+ORDER BY dm.emp_no , d.dept_no;
+
+
+-- e.g., 
+SELECT 
+    dm.*, d.*
+FROM
+    departments d
+        CROSS JOIN
+    dept_manager dm
+WHERE
+    d.dept_no <> dm.dept_no
 ORDER BY dm.emp_no , d.dept_no;
 
 
