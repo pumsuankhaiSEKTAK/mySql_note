@@ -114,6 +114,11 @@ WHERE
     d.dept_no <> dm.dept_no
 ORDER BY dm.emp_no , d.dept_no;
 
+---Using Aggregate Function with Joins
+--- Aggregate Function always use with GROUP BY clause
+
+
+
 
 
 
