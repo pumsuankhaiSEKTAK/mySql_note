@@ -205,7 +205,7 @@ FROM
     dept_manager m ON e.emp_no = m.emp_no
 GROUP BY e.gender;
 
-
+--- UNION vs UNION ALL: used to combine a few SELECT statements in a single output
 ---create and insert duplicate table 
 DROP TABLE IF EXISTS employees_dup;
 
