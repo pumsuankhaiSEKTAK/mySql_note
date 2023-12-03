@@ -80,6 +80,14 @@ s.salary > 145000
 --the cartesian product of the value of two or more sets
 --particularly useful when the tables in a database are not well connected
 
+SELECT 
+    dm.*, d.*
+FROM
+    dept_manager dm
+        CROSS JOIN
+    departments d
+ORDER BY dm.emp_no , d.dept_no;
+
 
 
 
