@@ -31,6 +31,15 @@ WHERE
     dept_name IS NOT NULL
 ORDER BY dept_no;
 
+--- old type of join
+SELECT 
+    e.emp_no, e.first_name, e.last_name, d.dept_no
+FROM
+    employees e,
+    dept_manager d
+WHERE
+    e.emp_no = d.emp_no;
+
 --e.g.2,
 SELECT 
     e.emp_no, 
