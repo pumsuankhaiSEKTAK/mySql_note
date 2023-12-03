@@ -19,6 +19,7 @@ set @@global.sql_mode := replace(@@global.sql_mode, 'ONLY_FULL_GROUP_BY', '');
 -- Left JOIN or LEFT OUTER JOIN
 --- The LEFT JOIN keyword returns all records from the left table (table1), and the matching records from the right table (table2). The result is 0 records from the right side, if there is no match.
 --- Right JOIN or Right OUTER JOIN is an invert of LEFT JOIN
+--- LEFT and RIGHT joins are perfect examples of one-to-many realationships
 e.g.2,
 SELECT 
     m.dept_no, m.emp_no, d.dept_name
