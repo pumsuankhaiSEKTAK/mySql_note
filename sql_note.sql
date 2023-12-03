@@ -17,4 +17,4 @@ set @@global.sql_mode := replace(@@global.sql_mode, 'ONLY_FULL_GROUP_BY', '');
 
 
 -- Left JOIN
---- retrieve all record from the left side of the table include all matches record within two tables
+--- retrieve all record from the left side of the table plus all matches record within two tables
