@@ -192,7 +192,8 @@ FROM
         JOIN
     salaries s ON m.emp_no = s.emp_no
 GROUP BY d.dept_name
-ORDER BY AVG(salary);
+HAVING average_salary > 60000
+ORDER BY average_salary DESC;
 
 
 
