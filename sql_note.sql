@@ -1,7 +1,8 @@
-JOIN 
-- Inner Join or Join : matching values = matching records
+--JOIN 
+-- Inner Join or Join : matching values = matching records
 
-e.g., SELECT 
+--e.g., 
+SELECT 
     m.dept_no, m.emp_no, d.dept_name
 FROM
     dept_manager_dup m
@@ -12,7 +13,8 @@ ORDER BY dept_no;
 
 set @@global.sql_mode := replace(@@global.sql_mode, 'ONLY_FULL_GROUP_BY', '');
 
-it means that the 'ONLY_FULL_GROUP_BY' setting was not present in the sql_mode to begin with, or it was successfully removed.
+---it means that the 'ONLY_FULL_GROUP_BY' setting was not present in the sql_mode to begin with, or it was successfully removed.
 
 
-- Left JOIN
+-- Left JOIN
+--- retrieve all record from the left side of the table include all matches record within two tables
