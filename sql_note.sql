@@ -184,7 +184,7 @@ ORDER BY e.emp_no;
 
 -- Tips and tricks for joins
 SELECT 
-    d.dept_name, AVG(salary)
+    d.dept_name, AVG(salary) AS average_salary
 FROM
     departments d
         JOIN
@@ -192,7 +192,7 @@ FROM
         JOIN
     salaries s ON m.emp_no = s.emp_no
 GROUP BY d.dept_name
-ORDER BY d.dept_no;
+ORDER BY AVG(salary);
 
 
 
