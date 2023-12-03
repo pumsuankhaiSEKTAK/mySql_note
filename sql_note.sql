@@ -16,5 +16,5 @@ set @@global.sql_mode := replace(@@global.sql_mode, 'ONLY_FULL_GROUP_BY', '');
 ---it means that the 'ONLY_FULL_GROUP_BY' setting was not present in the sql_mode to begin with, or it was successfully removed.
 
 
--- Left JOIN
---- retrieve all record from the left side of the table plus all matches record within two tables
+-- Left JOIN or LEFT OUTER JOIN
+--- left joins can deliver a list with all records from the left table that do not match any rows from the right table
