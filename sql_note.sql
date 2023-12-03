@@ -116,6 +116,29 @@ ORDER BY dm.emp_no , d.dept_no;
 
 ---Using Aggregate Function with Joins
 --- Aggregate Function always use with GROUP BY clause
+--e.g.,
+SELECT 
+    e.gender, AVG(s.salary) AS average_salary
+FROM
+    employees e
+        JOIN
+    salaries s ON e.emp_no = s.emp_no
+GROUP BY e.gender;
+
+
+--e.g.,
+SELECT 
+    e.first_name,
+    e.last_name,
+    e.hire_date,
+    m.from_date,
+    d.dept_name
+FROM
+    departments d
+        JOIN
+    dept_manager m ON d.dept_no = m.dept_no
+        JOIN
+    employees e ON m.emp_no = e.emp_no;
 
 
 
