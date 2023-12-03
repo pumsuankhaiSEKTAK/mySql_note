@@ -196,6 +196,17 @@ HAVING average_salary > 60000
 ORDER BY average_salary DESC;
 
 
+---e.g.,
+SELECT 
+    e.gender, COUNT(m.dept_no) AS number_of_employees
+FROM
+    employees e
+        JOIN
+    dept_manager m ON e.emp_no = m.emp_no
+GROUP BY e.gender;
+
+
+
 
 
 
