@@ -57,6 +57,7 @@ ORDER BY d.dept_no DESC, e.emp_no;
 
 
 ---JOIN plus WHERE clause
+--- e.g., 
 SELECT 
     e.emp_no, 
     e.first_name, 
@@ -68,3 +69,17 @@ FROM
     salaries s ON e.emp_no = s.emp_no
 WHERE
 s.salary > 145000
+
+
+--- CROSS JOIN
+--- a cross join will take the values from a certain table and connect them with all the values from the tables we want to join it with
+--- INNER JOIN typically connects only the matching value
+
+--- CROSS JOIN 
+--connects all the values, not just those that match
+--the cartesian product of the value of two or more sets
+--particularly useful when the tables in a database are not well connected
+
+
+
+
