@@ -18,6 +18,7 @@ set @@global.sql_mode := replace(@@global.sql_mode, 'ONLY_FULL_GROUP_BY', '');
 
 -- Left JOIN or LEFT OUTER JOIN
 --- left joins can deliver a list with all records from the left table that do not match any rows from the right table
+--- Right JOIN or Right OUTER JOIN is an invert of LEFT JOIN
 e.g.2,
 SELECT 
     m.dept_no, m.emp_no, d.dept_name
