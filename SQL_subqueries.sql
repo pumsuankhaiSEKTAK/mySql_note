@@ -36,4 +36,5 @@ WHERE
         FROM
             dept_manager dm
         WHERE
-            dm.emp_no = e.emp_no);
+            dm.emp_no = e.emp_no)
+ORDER BY emp_no;
