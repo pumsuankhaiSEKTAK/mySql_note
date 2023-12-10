@@ -54,3 +54,8 @@ WHERE
             t.emp_no = e.emp_no
                 AND t.title = 'Assistant Engineer')
 ORDER BY emp_no;
+
+
+--Assign employee number 110022 as a manager to all employee from 100001 to 10020, and employee number 110039 as a manager to all employee from 10021 to 10040
+
+
